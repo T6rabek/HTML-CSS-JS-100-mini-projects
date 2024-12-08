@@ -1,0 +1,57 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: crimson;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#accordion {
+    width: 600px;
+    font-family: sans-serif;
+    margin: 100px auto;
+}
+
+#accordion li {
+    list-style: none;
+    margin: 12px;
+    background: #fff;
+    padding: 10px;
+    margin-top: 10px;
+    width: 100%;
+    height: auto;
+}
+
+
+label {
+    font-weight: bold;
+    color: dodgerblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+input {
+    visibility: hidden;
+}
+
+label span {
+    transform: rotate(90deg);
+}
+
+.content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 2s ease ;
+}
+
+#accordion label + input[type='radio']:checked + .content {
+    max-height: 400px;
+}
