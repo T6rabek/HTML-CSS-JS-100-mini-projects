@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #000;
+    font-family: sans-serif;
+    color: #fff;
+}
+
+.content {
+    padding: 30px;
+    margin: 50px;
+    width: 1000px;
+    height: 100vh;
+    
+    transform: translateX(200px);
+}
+
+section {
+    margin: 50px 0;
+    border: 2px solid #fff;
+    padding: 20px;
+}
+
+section h1 {
+    margin-bottom: 20px;
+}
+
+
+.scroll {
+    height: 5px;
+    top: 10px;
+    left: 0;
+    position: fixed;
+    width: calc(100%);
+}   
+
+.progress {
+    height: 100%;
+    width: 0;
+    background: linear-gradient(90deg, dodgerblue, rgb(0, 251, 255));
+    border-radius: 2px;
+    transition: width 0.1s;
+}
